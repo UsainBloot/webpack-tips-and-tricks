@@ -1,0 +1,16 @@
+{
+  "name": "webpack-tips-and-tricks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "find -iname **/*/package.json",
+    "format": "prettier --loglevel warn --write '**/*.{js,json,,md}'",
+    "format:check": "prettier --check '**/*.{js,json,md}'"
+  },
+  "author": "Jack Palmer",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.0.2"
+  }
+}
