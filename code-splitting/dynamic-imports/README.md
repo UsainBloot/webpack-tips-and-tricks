@@ -24,7 +24,7 @@ Page A's javascript bundle will not include the additional dependency, and will 
 Webpack [magic comments](https://webpack.js.org/api/module-methods/#magic-comments) can be used to setup _preloading / prefetching_ of dynamic modules.
 eg.
 
-```
+```js
 import(/* webpackPreload: true */ 'ignored-module.js');
 ```
 
