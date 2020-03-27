@@ -10,4 +10,4 @@ A repository to demonstrate the many features of webpack
 
 ## Contents
 
-- [Code Splitting](./code-splitting/README.md)
+- [Code Splitting](./code-splitting)

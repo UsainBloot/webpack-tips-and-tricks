@@ -2,4 +2,4 @@
 
 ## Contents
 
-- [Entry Dependencies](./entry-dependencies/README.md)
+- [Entry Dependencies](./entry-dependencies)
