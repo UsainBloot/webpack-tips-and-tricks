@@ -6,10 +6,10 @@ module.exports = {
     index: { import: './src/index.js', dependOn: 'shared' },
     another: { import: './src/another-module.js', dependOn: 'shared' },
     // Array of shared dependencies, referenced by their require / import name
-    shared: ['lodash'],
+    shared: ['lodash']
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+    path: path.resolve(__dirname, 'dist')
+  }
 };
