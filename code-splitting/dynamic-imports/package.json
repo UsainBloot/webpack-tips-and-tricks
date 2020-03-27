@@ -5,7 +5,9 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "prebuild": "rm -rf ./dist",
+    "prestart": "npm run build",
+    "start": "http-server",
+    "prebuild": "rm -rf ./public/js",
     "build": "webpack"
   },
   "author": "",
@@ -14,7 +16,8 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "webpack": "^5.0.0-beta.14",
+    "http-server": "^0.12.1",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
 }

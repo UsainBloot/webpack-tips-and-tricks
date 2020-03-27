@@ -2,4 +2,6 @@
 
 ## Contents
 
-- [Entry Dependencies](./entry-dependencies/README.md)
+- [Dynamic Imports](./dynamic-imports)
+- [Entry Dependencies](./entry-dependencies)
+- [Split Chunks Plugin](./split-chunks-plugin)

@@ -14,8 +14,5 @@ When Page B bundle loads, it does not need to fetch the shared dependency bundle
 
 ## Documentation
 
-**Entry Context - Dependencies**
-https://webpack.js.org/configuration/entry-context/#dependencies
-
-**Code Splitting - Dependencies**
-https://webpack.js.org/guides/code-splitting/#entry-dependencies
+- [Entry Context - Dependencies](https://webpack.js.org/configuration/entry-context/#dependencies)
+- [Code Splitting - Dependencies](https://webpack.js.org/guides/code-splitting/#entry-dependencies)

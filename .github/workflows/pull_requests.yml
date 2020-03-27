@@ -1,4 +1,4 @@
-name: Pull Request
+name: PR
 
 on: 
   pull_request:
@@ -26,6 +26,28 @@ jobs:
         npm run format:check
       env:
         CI: true
+
+  build-code-splitting-dynamic-imports:
+    name: Build - code-splitting/dynamic-imports
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Webpack Build
+      run: |
+        cd ./code-splitting/dynamic-imports
+        npm ci
+        npm run build
+      env:
+        CI: true
         
   build-code-splitting-entry-dependencies:
     name: Build - code-splitting/entry-dependencies
@@ -44,6 +66,28 @@ jobs:
     - name: Webpack Build
       run: |
         cd ./code-splitting/entry-dependencies
+        npm ci
+        npm run build
+      env:
+        CI: true
+
+  build-code-splitting-split-chunks-plugin:
+    name: Build - code-splitting/split-chunks-plugin
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Webpack Build
+      run: |
+        cd ./code-splitting/split-chunks-plugin
         npm ci
         npm run build
       env:
