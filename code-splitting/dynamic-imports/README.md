@@ -19,7 +19,20 @@ Page A's javascript bundle will not include the additional dependency, and will 
 4. Click the "Click me" button
 5. See that `vendors~lodash.bundle.js` is fetched over the network and invoked to show to message built via Lodash's API
 
+## Preloading and Prefetching
+
+Webpack [magic comments](https://webpack.js.org/api/module-methods/#magic-comments) can be used to setup _preloading / prefetching_ of dynamic modules.
+eg.
+
+```
+import(/* webpackPreload: true */ 'ignored-module.js');
+```
+
+See more information in the [code splitting documentation](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
+
 ## Documentation
 
 - [Code Splitting - Dynamic Imports](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
+- [Code Splitting - Preloading / Prefetching Dynamic Imports](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
+- [Module Methods - Magic Comments](<(https://webpack.js.org/api/module-methods/#magic-comments)>)
 - [MDN - Dynamic Imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports)
