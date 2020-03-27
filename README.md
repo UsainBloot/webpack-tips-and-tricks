@@ -1,4 +1,5 @@
 # Webpack Tips & Tricks
+![Build](https://github.com/UsainBloot/webpack-tips-and-tricks/workflows/CI/badge.svg?branch=master&event=push)
 
 A repository to demonstrate the many features of webpack
 
