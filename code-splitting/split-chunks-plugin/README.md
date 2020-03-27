@@ -7,6 +7,9 @@ The plugin should notice that we've separated lodash out to a separate chunk and
 
 The plugin automatically works out common dependencies and splits them out into a vendors bundle.
 
+`SplitChunksPlugin` can be fine tuned to create multiple chunks, which could be used to group together similar dependencies.
+See [`SplitChunksPlugin` documentation](https://webpack.js.org/plugins/split-chunks-plugin) for more advanced features.
+
 ## Example
 
 Page A & Page B both use `lodash`.
@@ -16,4 +19,5 @@ When Page B bundle loads, it does not need to fetch the vendors bundle as it is 
 
 ## Documentation
 
-- [CodeSplitting - `SplitChunksPlugin`](https://webpack.js.org/guides/code-splitting/#splitchunksplugin)
+- [Code Splitting - `SplitChunksPlugin`](https://webpack.js.org/guides/code-splitting/#splitchunksplugin)
+- [`SplitChunksPlugin` - Documentation](https://webpack.js.org/plugins/split-chunks-plugin)
