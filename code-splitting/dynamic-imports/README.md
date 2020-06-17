@@ -34,5 +34,5 @@ See more information in the [code splitting documentation](https://webpack.js.or
 
 - [Code Splitting - Dynamic Imports](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
 - [Code Splitting - Preloading / Prefetching Dynamic Imports](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
-- [Module Methods - Magic Comments](<(https://webpack.js.org/api/module-methods/#magic-comments)>)
+- [Module Methods - Magic Comments](https://webpack.js.org/api/module-methods/#magic-comments)
 - [MDN - Dynamic Imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports)
