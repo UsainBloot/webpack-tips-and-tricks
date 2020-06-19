@@ -18,6 +18,12 @@ The page's javascript bundle will not include the additional dependency, and wil
 4. Click the "Click me" button
 5. See that `helloWorld.bundle.js` is fetched over the network and invoked to show to the Hello World message built via the `<HelloWorld />` react component
 
+## Shared dependencies between entry and chunk
+
+Any dependencies declared both the entry and a chunk, will be bundled into the entry and not the chunk.
+
+In this example, you can see that `index.bundle.js` includes the dependency for React, where as `helloWorld.bundle.js` does not and can reference it from the etnry point `index.bundle.js`.
+
 ## Documentation
 
 - [Webpack - Code Splitting - Dynamic Imports](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
