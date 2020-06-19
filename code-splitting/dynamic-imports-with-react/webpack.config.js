@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
+  devtool: 'source-map',
   entry: {
     index: './src/index.js'
   },
@@ -24,5 +25,9 @@ module.exports = {
         }
       }
     ]
+  },
+  externals: {
+    react: 'React', // Binds imports of 'react' to `window.React` which is created by the CDN unpkg react script
+    'react-dom': 'ReactDOM' // Binds imports of 'react-dom' to `window.ReactDOM` which is created by the CDN unpkg react script
   }
 };

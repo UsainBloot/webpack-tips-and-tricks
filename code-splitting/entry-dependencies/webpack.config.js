@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
+  devtool: 'source-map',
   entry: {
     index: { import: './src/index.js', dependOn: 'shared' },
     another: { import: './src/another-module.js', dependOn: 'shared' },

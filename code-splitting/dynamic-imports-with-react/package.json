@@ -12,16 +12,15 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "http-server": "^0.12.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
