@@ -2,7 +2,7 @@ import React, { useState, Suspense } from 'react';
 import Button from './Button';
 
 function HelloWorldMessage() {
-  const HelloWorld = React.lazy(() => import(/* webpackChunkName: "HelloWorld" */'./HelloWorld'));
+  const HelloWorld = React.lazy(() => import(/* webpackChunkName: "helloWorld" */'./HelloWorld'));
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <HelloWorld />

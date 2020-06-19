@@ -7,11 +7,11 @@ The idea is that any additional code and dependencies will only be fetched at th
 
 ## Example
 
-Page A includes code and dependencies that are only required after clicking a button.
+The page includes code and dependencies that are only required after clicking a button.
 
-Page A dynamically imports the code and dependencies when the button is clicked.
+The page dynamically imports the code and dependencies when the button is clicked.
 
-Page A's javascript bundle will not include the additional dependency, and will instead make a network request to fetch and invoke the code only when the button is clicked.
+The page's javascript bundle will not include the additional dependency, and will instead make a network request to fetch and invoke the code only when the button is clicked.
 
 1. `npm start`
 2. Open `http://localhost:8080` in a browser
