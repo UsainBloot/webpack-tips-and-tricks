@@ -96,6 +96,28 @@ jobs:
       env:
         CI: true
 
+  build-code-splitting-external-dependencies:
+    name: Build - code-splitting/external-dependencies
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Webpack Build
+      run: |
+        cd ./code-splitting/external-dependencies
+        npm ci
+        npm run build
+      env:
+        CI: true
+
   build-code-splitting-split-chunks-plugin:
     name: Build - code-splitting/split-chunks-plugin
     runs-on: ubuntu-latest

@@ -25,9 +25,5 @@ module.exports = {
         }
       }
     ]
-  },
-  externals: {
-    react: 'React', // Binds imports of 'react' to `window.React` which is created by the CDN unpkg react script
-    'react-dom': 'ReactDOM' // Binds imports of 'react-dom' to `window.ReactDOM` which is created by the CDN unpkg react script
   }
 };

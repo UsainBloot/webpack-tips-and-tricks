@@ -44,6 +44,10 @@ import(/* webpackPreload: true */ 'ignored-module.js');
 
 See more information in the [code splitting documentation](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
 
+## Shared dependencies between entry and chunk
+
+Any dependencies declared both the entry and a chunk, will be bundled into the entry and not the chunk.
+
 ## Documentation
 
 - [Webapack - Code Splitting - Dynamic Imports](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
