@@ -11,7 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "webpack": "^5.0.0-beta.14",
