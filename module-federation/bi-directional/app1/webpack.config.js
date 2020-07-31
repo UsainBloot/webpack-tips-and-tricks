@@ -27,7 +27,7 @@ module.exports = {
       name: 'app1',
       filename: 'remoteEntry.js',
       remotes: {
-        app2: 'app2@http://localhost:3002/remoteEntry.js'
+        app2: 'app2@http://localhost:3002/remoteEntry.js' // Instead of needing <script src="http://localhost:3002/remoteEntry.js" in app1's HTML
       },
       exposes: {
         './Button': './src/components/Button'
@@ -37,12 +37,10 @@ module.exports = {
         {
           ...deps,
           react: {
-            // eager: true,
             singleton: true,
             requiredVersion: deps.react
           },
           'react-dom': {
-            // eager: true,
             singleton: true,
             requiredVersion: deps['react-dom']
           }
