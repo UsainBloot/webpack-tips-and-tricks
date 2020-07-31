@@ -22,3 +22,4 @@ The dev tools should show that `.js` files are being served by both app1 (`local
 ## Documentation
 
 - [Github - module-federation/module-federation-examples - bi-directional](https://github.com/module-federation/module-federation-examples/tree/master/bi-directional)
+- [Code Splitting - Dynamic Imports With React](../../code-splitting/dynamic-imports-with-react)
