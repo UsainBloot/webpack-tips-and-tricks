@@ -14,3 +14,4 @@ A repository to demonstrate the many features of webpack
 ## Contents
 
 - [Code Splitting](./code-splitting)
+- [Module Federation](./module-federation)

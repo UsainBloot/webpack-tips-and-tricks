@@ -1,0 +1,24 @@
+{
+  "name": "@bi-directional/app2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "serve dist -p 3002",
+    "prebuild": "rm -rf dist",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "serve": "^11.3.2",
+    "webpack": "^5.0.0-beta.21",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
