@@ -1,21 +1,17 @@
 {
   "name": "webpack-tips-and-tricks",
   "version": "1.0.0",
-  "description": "",
+  "description": "A repository to demonstrate the many features of webpack",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "find -iname **/*/package.json",
-    "format": "prettier --loglevel warn --write '**/*.{js,json,,md}'",
-    "format:check": "prettier --check '**/*.{js,json,md}'"
+    "format": "prettier --loglevel warn --write '**/*.{js,jsx,json,html,md}'",
+    "format:check": "prettier --check '**/*.{js,jsx,json,html,md}'"
   },
   "author": "Jack Palmer",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.0.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "prettier": "^2.0.2"
   },
-  "dependencies": {
-    "lodash": "^4.17.19"
-  }
+  "dependencies": {}
 }

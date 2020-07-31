@@ -139,3 +139,26 @@ jobs:
         npm run build
       env:
         CI: true
+
+  module-federation-bi-directional:
+    name: Build - module-federation/bi-directional
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Webpack Build
+      run: |
+        cd ./module-federation/bi-directional
+        npm ci
+        npm run bootstrap
+        npm run build
+      env:
+        CI: true
