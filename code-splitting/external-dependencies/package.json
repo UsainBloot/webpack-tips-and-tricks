@@ -15,7 +15,7 @@
   "dependencies": {},
   "devDependencies": {
     "http-server": "^0.12.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
